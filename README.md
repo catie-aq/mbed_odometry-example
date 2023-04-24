@@ -1,6 +1,12 @@
 # mbed_odometry-example
 
- An example of using the 6TRON Odometry library with MbedOS.
+An example of using the 6TRON Odometry library with MbedOS.
+
+In this example, the program will define two fake software encoders, to get `OdometryTwoEncoders` working (child class of `Odometry`).  When launched, each encoder will be updated of a different amount of encoder tick, which will result for the robot to turn on itself, as seen on the Serial output.
+
+Has seen in the `src/` folder, and has it should be when using *6tron_odometry* library, a class need to be defined, which will define application specific odometry inputs. This class needs to be derived from `Odometry`, or any other child class from the library.
+
+In this example, and to make it simpler, the fake odometry is derived from `OdometryTwoEncoders`. See source files for more understanding.
 
 ## Requirements
 
