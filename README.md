@@ -8,14 +8,14 @@
 
 The following boards are required:
 
-- *List mbed_odometry-example hardware requirements here*
+- *Any board supported by MbedOS*
 
 ### Software requirements
 
 mbed_odometry-example makes use of the following libraries (automatically
 imported by `mbed deploy` or `mbed import`):
 
-- *List mbed_odometry-example software requirements here*
+- *[6tron_odometry](https://github.com/catie-aq/6tron_odometry)*
 
 ## Usage
 
@@ -23,6 +23,7 @@ This repository use MbedOS as RTOS framework. While next steps describes how to 
 
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
 target and toolchain definition:
+
 ```shell
 mbed import https://github.com/catie-aq/mbed_odometry-example.git mbed_odometry-example
 ```
